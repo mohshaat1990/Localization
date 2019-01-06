@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D3F86207C3C88362D69E4666 /* Pods_LanguageChange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD54821B31041C61103FFA4C /* Pods_LanguageChange.framework */; };
 		E52A293121E0192B0034167C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A293021E0192B0034167C /* AppDelegate.swift */; };
 		E52A293321E0192B0034167C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A293221E0192B0034167C /* ViewController.swift */; };
 		E52A293621E0192B0034167C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52A293421E0192B0034167C /* Main.storyboard */; };
@@ -38,9 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		25776B0E4917E2C23DB5368C /* Pods-LanguageChange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LanguageChange.debug.xcconfig"; path = "Target Support Files/Pods-LanguageChange/Pods-LanguageChange.debug.xcconfig"; sourceTree = "<group>"; };
-		322B5B79CA91F5533FCA6C58 /* Pods-LanguageChange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LanguageChange.release.xcconfig"; path = "Target Support Files/Pods-LanguageChange/Pods-LanguageChange.release.xcconfig"; sourceTree = "<group>"; };
-		BD54821B31041C61103FFA4C /* Pods_LanguageChange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LanguageChange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52A292D21E0192A0034167C /* LanguageChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanguageChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52A293021E0192B0034167C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E52A293221E0192B0034167C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3F86207C3C88362D69E4666 /* Pods_LanguageChange.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,18 +86,8 @@
 		950A44D43E21F54FE99032E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BD54821B31041C61103FFA4C /* Pods_LanguageChange.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D745CD082EDBBB5BF153B5D2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				25776B0E4917E2C23DB5368C /* Pods-LanguageChange.debug.xcconfig */,
-				322B5B79CA91F5533FCA6C58 /* Pods-LanguageChange.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		E52A292421E0192A0034167C = {
@@ -112,7 +97,6 @@
 				E52A294421E0192D0034167C /* LanguageChangeTests */,
 				E52A294F21E0192D0034167C /* LanguageChangeUITests */,
 				E52A292E21E0192A0034167C /* Products */,
-				D745CD082EDBBB5BF153B5D2 /* Pods */,
 				950A44D43E21F54FE99032E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -134,10 +118,10 @@
 				E5F95B2121E13A4600A2154F /* Resources */,
 				E52A293021E0192B0034167C /* AppDelegate.swift */,
 				E52A293221E0192B0034167C /* ViewController.swift */,
+				E52A293C21E0192D0034167C /* Info.plist */,
 				E52A293421E0192B0034167C /* Main.storyboard */,
 				E52A293721E0192D0034167C /* Assets.xcassets */,
 				E52A293921E0192D0034167C /* LaunchScreen.storyboard */,
-				E52A293C21E0192D0034167C /* Info.plist */,
 			);
 			path = LanguageChange;
 			sourceTree = "<group>";
@@ -184,11 +168,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E52A295521E0192D0034167C /* Build configuration list for PBXNativeTarget "LanguageChange" */;
 			buildPhases = (
-				94268497D057C3F162D3F570 /* [CP] Check Pods Manifest.lock */,
 				E52A292921E0192A0034167C /* Sources */,
 				E52A292A21E0192A0034167C /* Frameworks */,
 				E52A292B21E0192A0034167C /* Resources */,
-				E52A296321E020610034167C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -305,48 +287,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		94268497D057C3F162D3F570 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LanguageChange-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E52A296321E020610034167C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E52A292921E0192A0034167C /* Sources */ = {
@@ -542,7 +482,6 @@
 		};
 		E52A295621E0192D0034167C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25776B0E4917E2C23DB5368C /* Pods-LanguageChange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -561,7 +500,6 @@
 		};
 		E52A295721E0192D0034167C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 322B5B79CA91F5533FCA6C58 /* Pods-LanguageChange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
