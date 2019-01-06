@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  LanguageChange
+
+  Created by LapStore on 1/5/19.
+  Copyright © 2019 shaat. All rights reserved.
+*/
+"languagechange" = "You Can Now Change Language From StoryBoard";
+"languagedescription" = "You can set only Localizable key for every View from storyboard";
+"change" = "change";
+"text alignment" = "text alignment";

@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  LanguageChange
+
+  Created by LapStore on 1/5/19.
+  Copyright © 2019 shaat. All rights reserved.
+*/
+"languagechange" = "يمكنك تغيير اللغة الان من الاستروي بورد";
+"languagedescription" = "يمكنك تغيير localizableKey مناالاستروبورد";
+"change" = "تغيير";
+"text alignment" = "تغيير اتجاه النص";
+
