@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
-  s.name             = 'Localizable'
-  s.version          = '0.1.2'
+  s.name             = 'LocalizableLib'
+  s.version          = '0.1.3'
   s.summary          = 'support change language on the fly and Right to left languages and localize views from StoryBoard'
   s.description      = <<-DESC
 support change language on the fly and Right to left languages and localize views from StoryBoard! 
