@@ -15,6 +15,8 @@ pod 'LocalizableLib', '~> 0.1.5'
 
 ## Usage
 
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/11280137/50799717-e167d580-12e5-11e9-9770-c04e7f28be4a.gif)
+
 ```swift
 import LocalizableLib
 
