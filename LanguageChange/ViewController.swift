@@ -27,6 +27,7 @@ class ViewController: UIViewController {
                                            forceReset: true,
                                            startStoryBorad: "Main",
                                            startViewController: "ViewController")
+            "changeLanguage".localized()
         }
     }
 }

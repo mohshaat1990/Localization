@@ -5,12 +5,12 @@
 import UIKit
 
 struct Constants {
- static let appleLanguage = "AppleLanguages"
- static let defaultLanguage = "en"
- static let arabicLanguage = "ar"
+    static let appleLanguage = "AppleLanguages"
+    static let defaultLanguage = "en"
+    static let arabicLanguage = "ar"
 }
 
-class MoLocalization: NSObject {
+public class MoLocalization: NSObject {
     
     static var isRightToLeftLanguage = false
     
@@ -20,25 +20,25 @@ class MoLocalization: NSObject {
         rootviewcontroller.rootViewController = stry.instantiateViewController(withIdentifier: startViewController)
     }
     
-    class func setCurrentLang(lang: String, isRightToLeft: Bool = false, forceReset: Bool = false , startStoryBorad: String? = nil, startViewController: String? = nil) {
+    public class func setCurrentLang(lang: String, isRightToLeft: Bool = false, forceReset: Bool = false , startStoryBorad: String? = nil, startViewController: String? = nil) {
         MoLocalization.isRightToLeftLanguage = isRightToLeft
         let userdef = UserDefaults.standard
         userdef.set([lang], forKey: Constants.appleLanguage)
         userdef.synchronize()
         if isRightToLeft == true {
-          enableRightToLeft()
+            enableRightToLeft()
         } else {
-          enableLeftToRight()
+            enableLeftToRight()
         }
         if let startStoryBorad = startStoryBorad, let startViewController = startViewController, forceReset == true{
-         reset(startStoryBorad: startStoryBorad, startViewController: startViewController)
+            reset(startStoryBorad: startStoryBorad, startViewController: startViewController)
         }
         
     }
     
-   private class func enableRightToLeft() {
-       UIView.appearance().semanticContentAttribute = .forceRightToLeft
-       UINavigationBar .appearance().semanticContentAttribute = .forceRightToLeft
+    private class func enableRightToLeft() {
+        UIView.appearance().semanticContentAttribute = .forceRightToLeft
+        UINavigationBar .appearance().semanticContentAttribute = .forceRightToLeft
     }
     
     private class func enableLeftToRight() {
@@ -67,4 +67,4 @@ extension String {
         return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")
     }
     
-   }
+}
