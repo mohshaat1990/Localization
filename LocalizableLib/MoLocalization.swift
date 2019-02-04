@@ -4,10 +4,10 @@
 
 import UIKit
 
-struct Constants {
-    static let appleLanguage = "AppleLanguages"
-    static let defaultLanguage = "en"
-    static let arabicLanguage = "ar"
+public struct Constants {
+    public static let appleLanguage = "AppleLanguages"
+    public static let defaultLanguage = "en"
+    public static let arabicLanguage = "ar"
 }
 
 public class MoLocalization: NSObject {
@@ -61,7 +61,7 @@ public class MoLocalization: NSObject {
 
 extension String {
     
-    func localized() -> String {
+    public func localized() -> String {
         let path = Bundle.main.path(forResource: MoLocalization.currentAppleLanguage(), ofType: "lproj")
         let bundle = Bundle(path: path!)
         return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")

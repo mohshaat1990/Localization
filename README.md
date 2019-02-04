@@ -10,7 +10,7 @@
 using pods
 
 ```bash
-pod 'LocalizableLib', '~> 0.1.5'
+pod 'LocalizableLib', '~> 0.1.6'
 ```
 
 ## Usage
