@@ -4,6 +4,7 @@
 - support localization from StoryBoard
 - support Image RTL from StoryBoard
 - change Language without Restarting Application
+- localize Fonts by substitute font
 
 ## Installation
 
