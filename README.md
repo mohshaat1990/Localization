@@ -10,7 +10,7 @@
 using pods
 
 ```bash
-pod 'LocalizableLib', 
+pod 'LocalizableLib'
 ```
 
 ## Usage
@@ -35,14 +35,22 @@ isRightToLeft: false,
 forceReset: true,
 startStoryBorad: "Main",
 startViewController: "ViewController")
+```
+## localizable programmatically
+
+```swift
 
 // localizable programmatically
 
-"changeLanguage".localized()
+lbl.text = "changeLanguage".localized()
+
 ```
+
 ## Change Font Global 
 
 ```swift
+import LocalizableLib
+
 if MoLocalization.currentAppleLanguage() == "ar" {
 UITextField.appearance().substituteFontName = "Arial"
 UILabel.appearance().substituteFontName = "Arial"
