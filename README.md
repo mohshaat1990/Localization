@@ -26,7 +26,7 @@ MoLocalization.set(lang: "ar",
 isRightToLeft: true,
 forceReset: true,
 startStoryBorad: "Main",
-startViewController: "ViewController"
+startViewController: "ViewController")
 
 // for left to right language
 
