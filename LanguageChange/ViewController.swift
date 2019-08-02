@@ -12,22 +12,35 @@ class ViewController: UIViewController {
     var shaat = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupGlobalAppearance()
         // Do any additional setup after loading the view, typically from a nib.
     }
     @IBAction func changeLanguageAction(_ sender: Any) {
-        if MoLocalization.currentAppleLanguage() == Constants.arabicLanguage {
-            MoLocalization.setCurrentLang(lang: Constants.defaultLanguage,
+        if MoLocalization.currentAppleLanguage() == "en" {
+            MoLocalization.set(lang: "ar",
+                                          isRightToLeft: true,
+                                          forceReset: true,
+                                          startStoryBorad: "Main",
+                                          startViewController: "ViewController")
+          setupGlobalAppearance()
+           
+        } else {
+            MoLocalization.set(lang: "en",
                                           isRightToLeft: false,
                                           forceReset: true,
                                           startStoryBorad: "Main",
                                           startViewController: "ViewController")
-        } else {
-             MoLocalization.setCurrentLang(lang: Constants.arabicLanguage,
-                                           isRightToLeft: true,
-                                           forceReset: true,
-                                           startStoryBorad: "Main",
-                                           startViewController: "ViewController")
-            "changeLanguage".localized()
+            
         }
     }
+    
+    func setupGlobalAppearance(){
+        if MoLocalization.currentAppleLanguage() == "ar" {
+            UITextField.appearance().substituteFontName = "Arial"
+            UILabel.appearance().substituteFontName = "Arial"
+            UILabel.appearance().substituteFontNameBold = "Arial-Bold"
+            UITextField.appearance().substituteFontNameBold = "Arial-Bold"
+        }
+    }
+    
 }

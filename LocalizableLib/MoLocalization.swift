@@ -4,10 +4,9 @@
 
 import UIKit
 
-public struct Constants {
-    public static let appleLanguage = "AppleLanguages"
-    public static let defaultLanguage = "en"
-    public static let arabicLanguage = "ar"
+ struct Constants {
+     static let appleLanguage = "AppleLanguages"
+     static let defaultLanguage = "en"
 }
 
 public class MoLocalization: NSObject {
@@ -20,7 +19,7 @@ public class MoLocalization: NSObject {
         rootviewcontroller.rootViewController = stry.instantiateViewController(withIdentifier: startViewController)
     }
     
-    public class func setCurrentLang(lang: String, isRightToLeft: Bool = false, forceReset: Bool = false , startStoryBorad: String? = nil, startViewController: String? = nil) {
+    public class func set(lang: String, isRightToLeft: Bool = false, forceReset: Bool = false , startStoryBorad: String? = nil, startViewController: String? = nil) {
         MoLocalization.isRightToLeftLanguage = isRightToLeft
         let userdef = UserDefaults.standard
         userdef.set([lang], forKey: Constants.appleLanguage)

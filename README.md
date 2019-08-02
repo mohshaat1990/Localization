@@ -10,7 +10,7 @@
 using pods
 
 ```bash
-pod 'LocalizableLib', '~> 0.1.6'
+pod 'LocalizableLib', 
 ```
 
 ## Usage
@@ -22,21 +22,31 @@ import LocalizableLib
 
 // for right to left language
 
- MoLocalization.setCurrentLang(lang: Constants.defaultLanguage,
-                                          isRightToLeft: true,
-                                          forceReset: true,
-                                          startStoryBorad: "Main",
-                                          startViewController: "ViewController")
+MoLocalization.set(lang: "ar",
+isRightToLeft: true,
+forceReset: true,
+startStoryBorad: "Main",
+startViewController: "ViewController"
 
 // for left to right language
 
- MoLocalization.setCurrentLang(lang: Constants.defaultLanguage,
-                                          isRightToLeft: false,
-                                          forceReset: true,
-                                          startStoryBorad: "Main",
-                                          startViewController: "ViewController")
+MoLocalization.set(lang: "en",
+isRightToLeft: false,
+forceReset: true,
+startStoryBorad: "Main",
+startViewController: "ViewController")
 
 // localizable programmatically
 
 "changeLanguage".localized()
+```
+## Change Font Global 
+
+```swift
+if MoLocalization.currentAppleLanguage() == "ar" {
+UITextField.appearance().substituteFontName = "Arial"
+UILabel.appearance().substituteFontName = "Arial"
+UILabel.appearance().substituteFontNameBold = "Arial-Bold"
+UITextField.appearance().substituteFontNameBold = "Arial-Bold"
+}
 ```

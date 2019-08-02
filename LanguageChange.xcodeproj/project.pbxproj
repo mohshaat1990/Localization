@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5297B5922F4E17F0099E63B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5297B5722F4E17E0099E63B /* UIView+Extensions.swift */; };
+		E5297B5A22F4E17F0099E63B /* UIViewFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5297B5822F4E17E0099E63B /* UIViewFont+Extension.swift */; };
 		E52A293121E0192B0034167C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A293021E0192B0034167C /* AppDelegate.swift */; };
 		E52A293321E0192B0034167C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A293221E0192B0034167C /* ViewController.swift */; };
 		E52A293621E0192B0034167C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52A293421E0192B0034167C /* Main.storyboard */; };
@@ -14,7 +16,6 @@
 		E52A293B21E0192D0034167C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52A293921E0192D0034167C /* LaunchScreen.storyboard */; };
 		E52A294621E0192D0034167C /* LanguageChangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A294521E0192D0034167C /* LanguageChangeTests.swift */; };
 		E52A295121E0192D0034167C /* LanguageChangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A295021E0192D0034167C /* LanguageChangeUITests.swift */; };
-		E5E7AFC321E2B0C500ACE998 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7AFC121E2B0C500ACE998 /* ExtensionUIView.swift */; };
 		E5E7AFC421E2B0C500ACE998 /* MoLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7AFC221E2B0C500ACE998 /* MoLocalization.swift */; };
 		E5F95B2621E13AFB00A2154F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5F95B2821E13AFB00A2154F /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E5297B5722F4E17E0099E63B /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		E5297B5822F4E17E0099E63B /* UIViewFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewFont+Extension.swift"; sourceTree = "<group>"; };
 		E52A292D21E0192A0034167C /* LanguageChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanguageChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52A293021E0192B0034167C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E52A293221E0192B0034167C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +53,6 @@
 		E52A294C21E0192D0034167C /* LanguageChangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanguageChangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52A295021E0192D0034167C /* LanguageChangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageChangeUITests.swift; sourceTree = "<group>"; };
 		E52A295221E0192D0034167C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5E7AFC121E2B0C500ACE998 /* ExtensionUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
 		E5E7AFC221E2B0C500ACE998 /* MoLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoLocalization.swift; sourceTree = "<group>"; };
 		E5F95B2421E13AEA00A2154F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		E5F95B2521E13AEB00A2154F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -147,7 +149,8 @@
 		E5E7AFC021E2B0C500ACE998 /* LocalizableLib */ = {
 			isa = PBXGroup;
 			children = (
-				E5E7AFC121E2B0C500ACE998 /* ExtensionUIView.swift */,
+				E5297B5722F4E17E0099E63B /* UIView+Extensions.swift */,
+				E5297B5822F4E17E0099E63B /* UIViewFont+Extension.swift */,
 				E5E7AFC221E2B0C500ACE998 /* MoLocalization.swift */,
 			);
 			path = LocalizableLib;
@@ -294,7 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5E7AFC421E2B0C500ACE998 /* MoLocalization.swift in Sources */,
-				E5E7AFC321E2B0C500ACE998 /* ExtensionUIView.swift in Sources */,
+				E5297B5922F4E17F0099E63B /* UIView+Extensions.swift in Sources */,
+				E5297B5A22F4E17F0099E63B /* UIViewFont+Extension.swift in Sources */,
 				E52A293321E0192B0034167C /* ViewController.swift in Sources */,
 				E52A293121E0192B0034167C /* AppDelegate.swift in Sources */,
 			);
