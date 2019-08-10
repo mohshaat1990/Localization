@@ -21,7 +21,7 @@ pod 'LocalizableLib'
 ```swift
 import LocalizableLib
 
-// for right to left language
+// for left to right language
 
 MoLocalization.set(lang: "ar",
 isRightToLeft: true,
@@ -29,7 +29,7 @@ forceReset: true,
 startStoryBorad: "Main",
 startViewController: "ViewController")
 
-// for left to right language
+// for right to left language
 
 MoLocalization.set(lang: "en",
 isRightToLeft: false,
