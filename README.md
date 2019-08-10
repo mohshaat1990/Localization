@@ -37,6 +37,14 @@ forceReset: true,
 startStoryBorad: "Main",
 startViewController: "ViewController")
 ```
+## to get current Language 
+
+```swift
+
+MoLocalization.currentAppleLanguage()
+
+```
+
 ## localizable programmatically
 
 ```swift
